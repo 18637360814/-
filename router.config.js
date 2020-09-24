@@ -54,6 +54,10 @@ export default [
       //   path: '/contact',
       //   component: '@/pages/Contact/index',
       // },
+      {
+        path: '/register',
+        component: '@/pages/Register/index',
+      },
       { component: '404' },
     ],
   },

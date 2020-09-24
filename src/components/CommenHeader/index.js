@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { history } from 'umi';
 import { Menu } from 'antd';
+import User from '@/components/User';
 
 const { SubMenu } = Menu;
 import { AppstoreOutlined } from '@ant-design/icons';
@@ -14,7 +15,7 @@ const CommenHeader = () => {
   };
 
   return (
-    <div>
+    <div style={{ position: 'relative' }}>
       <Menu
         onClick={e => {
           menuClick(e);
@@ -38,6 +39,7 @@ const CommenHeader = () => {
         <Menu.Item key="expert">行业专家</Menu.Item>
         <Menu.Item key="contact">联系我们</Menu.Item>
       </Menu>
+      <User />
     </div>
   );
 };
