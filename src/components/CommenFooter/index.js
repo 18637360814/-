@@ -4,7 +4,7 @@ import { Col, Row, Icon } from 'antd';
 
 const CommenFooter = () => {
   return (
-    <div>
+    <div style={{ position: 'absolute', bottom: '0', width: '100%' }}>
       <div className={styles.footer}>
         <div className={styles.name}>
           {/* <img src={require('@/assets/logo2.png')} /> */}

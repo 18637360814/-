@@ -22,6 +22,10 @@ export default [
         path: '/news',
         component: '@/pages/News/index',
       },
+      {
+        path: '/product',
+        component: '@/pages/Product/index',
+      },
       // {
       //   path: '/product',
       //   component: '@/pages/Product/index',
