@@ -1,12 +1,17 @@
 import React, { useState } from 'react';
-import { history } from 'umi';
+import { Link } from 'umi';
+import styles from './index.less';
 
 const User = () => {
   return (
-    <div>
-      <span>登录</span>
+    <div className={styles.user}>
+      <Link className={styles.login} to="/user/login">
+        登录
+      </Link>
       <span>丨</span>
-      <span>注册</span>
+      <Link className={styles.login} to="/register">
+        注册
+      </Link>
     </div>
   );
 };

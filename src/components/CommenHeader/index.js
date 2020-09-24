@@ -11,14 +11,11 @@ const CommenHeader = () => {
 
   const menuClick = e => {
     setcurrent(e.key);
-    if (e.key === 'user') {
-      return;
-    }
     e.key !== 'index' ? history.push(`/${e.key}`) : history.push(`/`);
   };
 
   return (
-    <>
+    <div style={{ position: 'relative' }}>
       <Menu
         onClick={e => {
           menuClick(e);
@@ -41,11 +38,9 @@ const CommenHeader = () => {
         <Menu.Item key="app">技术应用</Menu.Item>
         <Menu.Item key="expert">行业专家</Menu.Item>
         <Menu.Item key="contact">联系我们</Menu.Item>
-        <Menu.Item key="user" style={{ float: 'right' }}>
-          <User />
-        </Menu.Item>
       </Menu>
-    </>
+      <User />
+    </div>
   );
 };
 
